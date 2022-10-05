@@ -1,0 +1,73 @@
+.cima{
+    height: 7vh;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    padding-right: 20px;
+}
+
+footer{
+    height: 7vh;
+    background-color: #3347B0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.informations{
+    display: flex;
+    flex-direction: column;
+}
+
+.social-medias{
+    display: flex;
+    gap: 10px;
+}
+.social-media{
+    height: 30px;
+    width: 30px;
+    border: solid 2px white;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 670px) {
+    header, footer{
+        width: 100vw;
+    }
+
+    .voltar{
+        height: 80%;
+    }
+
+    .logo, .link-voltar{
+        height: 100%;
+    }
+
+    .informations, .copyright, .social-medias{
+        font-size: 0.5rem;
+    }
+
+    .social-media{
+        height: 20px;
+        width: 20px;
+        flex-wrap: wrap;
+    }
+
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        font-size: 0.7rem;
+        width: 33%;
+    }
+
+    .informations{
+        gap: 2px;
+    }
+}

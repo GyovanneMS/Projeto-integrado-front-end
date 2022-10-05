@@ -1,0 +1,218 @@
+main{
+    min-height: 83vh;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    height: 50px;
+    justify-content: space-around;
+    background-color: #BCC2E5;;
+}
+
+.status{
+    border: none;
+    background-color: #BCC2E5;
+    color: #3347B0;
+}
+
+.legenda{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+}
+
+.legendas{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+}
+
+.legendas div{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.blue{
+    color: #3347B0;
+}
+
+.yellow{
+    color: #E5B657;
+} 
+
+.years{
+    border: none;
+    background-color: #BCC2E5;
+    color: #3347B0;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+h1{
+    height: 30%;
+    color: #3347B0;
+    margin-top: 20px;
+}
+
+.todosAlunos{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.aluno{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.alunos{
+    height: 300px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-wrap: wrap;
+    transition: 2.8s;
+}
+
+.alunos:hover{
+    box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+    padding-bottom: 30px;
+    font-size: 1.3rem;
+    gap: 30px;
+}
+
+.alunos:hover img{
+    transition: 3s;
+    transform: rotate(360deg);
+}
+
+.cursando{
+    background-color: #3347B0;
+}
+.finalizado{
+    background-color: #E5B657;
+}
+.sem-inforacao{
+    background-color: green;
+}
+
+.alunos img{
+    height: 60%;
+}
+
+.alunos p{
+    display: flex;
+    text-align: center;
+}
+
+@media (max-width: 670px) {
+
+    body{
+        padding: 0px;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav, .cima{
+        width: 100vw;
+    }
+
+    .cima{
+        display: flex;
+        align-items: center;
+        height: 60px;
+    }
+
+    .cima .voltar{
+        height: 80%
+    }
+
+    .logo{
+        height: 100%;
+    }
+
+    nav{
+        height: 60px;
+    }
+
+    .nav-item{
+        font-size: 1rem;
+    }
+
+    .legenda{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .legenda p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .legendas{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .legenda div{
+        display: flex;
+        flex-wrap: nowrap; 
+        gap: 5px;
+    }
+
+    .title{
+        display: flex;
+        text-align: center;
+    }
+
+    .alunos{
+        height: 200px;
+        width: 150px;
+        display: flex;
+        font-size: 0.8rem;
+        color: white;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.25);
+    }
+
+    .alunos img{
+        display: flex;
+    }
+
+    .aluno{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer{
+        margin-top: 20px;
+    }
+
+}

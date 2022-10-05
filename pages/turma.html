@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6b829730ec.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/turma.css">
+    <script src="../js/turma.js" defer type="module"></script>
+    <title>Turma</title>
+</head>
+<body>
+    <header>
+        <div class="cima">
+            <img src="../img/logo.png" alt="logo do site" class="logo">
+        <a href="../index.html" class="link-voltar"><img src="../img/sair (1).png" alt="Botão de sair" class="voltar"></a>
+        </div>
+        <nav>
+            <select name="options-status" id="status-dos-alunos" class="status-dos-alunos nav-item">
+                <option value="default" class="nenhum" id="nenhum">Status</option>
+                <option value="Finalizado" class="finalizado" id="finalizado">Finalizado </option>
+                <option value="Cursando" class="finalizado">Cursando</option>
+            </select>
+
+            <!--<select name="options-years" id="years" class="years nav-item"></select>-->
+            <span class="legenda nav-item"><p>LEGENDA</p><div class="legendas"><div><i class="fa-solid fa-square blue"></i><p>Cursando</p></div><div><i class="fa-solid fa-square yellow"></i><p>Finalizado</p></span></div></div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 id="titulo-da-pagina" class="title"></h1>
+        <div class="todosAlunos"><div class="aluno" id="alunos"></div></div>
+    </main>
+
+    <footer>
+        <span class="informations">
+            <span class="tel info"><i class="fa-solid fa-phone"></i> (11) 4774-4700</span>
+            <span class="mail info"><i class="fa-solid fa-envelope"></i> lionschool@gmail.com</span>
+            <span class="local info"><i class="fa-solid fa-location-dot"></i> Rua tcc, 211,  Centro, Jandira</span>
+        </span>
+        <span class="copyright">
+            <p>Copyright © 2022 | Fernando Leonid</p>
+        </span>
+        <span class="social-medias">
+            <div class="social-media"><i class="fa-brands fa-youtube"></i></div><div class="social-media"><i class="fa-brands fa-twitter"></i></div><div class="social-media"><i class="fa-brands fa-instagram"></i></div><div class="social-media"><i class="fa-brands fa-facebook-f"></i></div>
+        </span>
+    </footer>
+</body>
+</html>
