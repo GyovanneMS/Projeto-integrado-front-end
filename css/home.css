@@ -39,20 +39,20 @@ h1{
     display: none;
 }
 
-.main-img:hover{
+/*.main-img:hover{
     filter: invert(200%)
-}
+}*/
 
 .studant{
     height: 650px;
     transition: 2.5s;
 }
 
-.studant:hover{
+/*.studant:hover{
     transform: scaleX(-1);
     background-color: #010101;
     filter: invert(200%)
-}
+}*/
 
 mark{
     background-color: white;
@@ -61,9 +61,9 @@ mark{
     transition: 2.5s;
 }
 
-mark:hover{
+/*mark:hover{
     color: red;
-}
+}*/
 
 .cursos{
     width: 50%;

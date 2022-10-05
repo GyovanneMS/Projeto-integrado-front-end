@@ -104,8 +104,8 @@ h1{
 }
 
 .alunos:hover img{
-    transition: 3s;
-    transform: rotate(360deg);
+    transition: 1.5s;
+    transform: rotate(720deg);
 }
 
 .cursando{

@@ -96,7 +96,7 @@ main{
     text-shadow: 0px 4px 4px rgba(0,0,0,0.25);
 }
 
-@keyframes changeBackgroundColor {
+/*(@keyframes changeBackgroundColor {
     0% {
         background-color: #3347B0;
       }
@@ -110,7 +110,7 @@ main{
     
 progress{
     animation: changeBackgroundColor 7s infinite;
-}
+}*/
 
 .color{
     display: flex;
