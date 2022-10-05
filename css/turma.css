@@ -2,6 +2,8 @@ main{
     min-height: 83vh;
 }
 
+
+
 nav{
     display: flex;
     align-items: center;
@@ -61,6 +63,8 @@ h1{
     height: 30%;
     color: #3347B0;
     margin-top: 20px;
+    font-family: Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
 }
 
 .todosAlunos{

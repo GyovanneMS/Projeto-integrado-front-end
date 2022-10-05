@@ -1,7 +1,7 @@
 'use strict'
 
 const infoCursos = async () => {
-    const cursos = `http://localhost:8080/informacoesDosCursos`
+    const cursos = `https://senai-api-gyovanne.netlify.app/.netlify/functions/api/informacoesDosCursos`
 
     const response = await fetch(cursos);
 
@@ -11,7 +11,7 @@ const infoCursos = async () => {
 }
 
 const nomeCurso = async (sigla) => {
-    const nome = `http://localhost:8080/nome/${sigla}`
+    const nome = `https://senai-api-gyovanne.netlify.app/.netlify/functions/api/nome/${sigla}`
  
     const response = await fetch(nome);
     
@@ -24,7 +24,7 @@ const infoAlunos = async (nomeCurso, status) => {
     if(status == '' || status == undefined){
         status = 'default';
     }
-    const alunos = `http://localhost:8080/alunos/${nomeCurso}/?status=${status}`
+    const alunos = `https://senai-api-gyovanne.netlify.app/.netlify/functions/api/alunos/${nomeCurso}/?status=${status}`
 
     const response = await fetch(alunos);
 
@@ -34,7 +34,7 @@ const infoAlunos = async (nomeCurso, status) => {
 }
 
 const infoUmAluno = async (nomeAluno) => {
-    const aluno = `http://localhost:8080/disciplinas/${nomeAluno}`
+    const aluno = `https://senai-api-gyovanne.netlify.app/.netlify/functions/api/disciplinas/${nomeAluno}`
 
     const response = await fetch(aluno);
 
@@ -45,7 +45,7 @@ const infoUmAluno = async (nomeAluno) => {
 
 const infoUmAlunoMatricula = async (nomeAluno) => {
     
-    const aluno = `http://localhost:8080/informacoes/${nomeAluno}`
+    const aluno = `https://senai-api-gyovanne.netlify.app/.netlify/functions/api/informacoes/${nomeAluno}`
 
     const response = await fetch(aluno);
 
