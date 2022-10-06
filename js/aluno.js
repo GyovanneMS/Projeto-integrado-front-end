@@ -36,14 +36,45 @@ const nota = (valorNota) => {
     
     divNota.classList.add(`${classe}`)
     divNota.classList.add('nota')
+    let nomeNota =  formandoSigla(valorNota.Nome)
+    console.log(nomeNota)
     divNota.innerHTML = `
     <div class='valorNota numeroNota'>${valorNota.Nota}</div>
     <progress value="${valorNota.Nota}" nivelNota" max=100></progress>
     <div class='valorNota'>${valorNota.Nome}</div>`
     
     return divNota
-    
 }
+
+const formandoSigla = (nomeNota) => {
+    let nome = nomeNota;
+    let palavras = nome.split(' ');
+    
+    return nome
+}
+
+const primeiraLetra = (palavra) => {
+    palavra.splice(1)
+    return palavra
+}
+
+/*
+const titulo = async () => {
+    //const titulo = document.getElementsByClassName('h1');
+    let curso = localStorage.getItem('nomeCurso');
+    let cursoNome = await nomeCurso(curso)
+    let title = cursoNome.Nome[0].Nome
+    //console.log(cursoNome.split(' - '))
+    //titulo.innerHTML = `a${title}a`;
+    //titulo.append(title)
+    document.getElementById('titulo-da-pagina').textContent = cortarTitulo(title)
+}
+
+const cortarTitulo = (titulo) => {
+    const textoCerto = titulo.split(' em ');
+    return textoCerto[1]
+}
+*/
 
 const notasResult = async () => {
     let divLocalNotas = document.querySelector('.notas')

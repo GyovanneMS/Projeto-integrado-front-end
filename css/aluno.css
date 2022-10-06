@@ -30,7 +30,6 @@ main{
     text-align: center;
     font-weight: 500;
     font-size: 2rem;
-
 }
 
 .notas{
@@ -53,9 +52,6 @@ main{
     gap: 80px;
 }
 
-.nivelNota{
-    height: 16px;
-}
 
 .nota::-webkit-progress-value{
     background-color: black;
@@ -63,7 +59,6 @@ main{
 
 .nota progress::-webkit-progress-bar{
     background-color: #EEEFF8;
-    height: 16px;
 }
 
 .blue progress::-webkit-progress-value{
@@ -123,7 +118,6 @@ progress{
     display: inline-block;
     border-radius: 15px;
     transform: rotate(-90deg);
-    height: 16px;
 }
 
 @media (max-width: 670px) {
