@@ -75,3 +75,9 @@ footer{
         gap: 2px;
     }
 }
+
+@media (min-width: 671), (max-width: 1080) {
+    header, footer{
+        width: 1vw;
+    }
+}
