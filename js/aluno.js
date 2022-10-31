@@ -46,18 +46,6 @@ const nota = (valorNota) => {
     return divNota
 }
 
-const formandoSigla = (nomeNota) => {
-    let nome = nomeNota;
-    let palavras = nome.split(' ');
-    
-    return nome
-}
-
-const primeiraLetra = (palavra) => {
-    palavra.splice(1)
-    return palavra
-}
-
 /*
 const titulo = async () => {
     //const titulo = document.getElementsByClassName('h1');
