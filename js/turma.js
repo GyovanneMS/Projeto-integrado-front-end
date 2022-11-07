@@ -18,7 +18,7 @@ const cortarTitulo = (titulo) => {
     const textoCerto = titulo.split(' em ');
     return textoCerto[1]
 }
-
+ 
 const filtro = async () => {
     let status = document.getElementById('status-dos-alunos').value
     let curso = localStorage.getItem('nomeCurso')
